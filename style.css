@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(191, 186, 186, 0.8));
+    background-image: url(priyanimage.png);
+    background-size: cover;
+    background-position: center;
+ }
+ .navbar{
+    width: 85%;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+ }
+ .logo{
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    text-decoration: none;
+    color: aquamarine;
+ }
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: aquamarine;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #ec75ae;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.6s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.content h1{
+    margin-top: 80px;
+    font-size: 70px;
+}
+.content p{
+    margin: 20px auto;
+   line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    border: 2px solid #f386bb;
+    background: transparent;
+    color: wheat;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #e84393;
+    width: 0;
+    height: 100%;
+    border-radius: 25px;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+
+    .container1{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        background-color: rgba(91, 9, 9, 0.8);
+    }
+    .container1 .box0{
+        width: 500px;
+        height: 500px;
+    }
+    .container1 #box1{
+        max-width: 600px;
+        height: 600px;
+        width: 500px;
+        margin: auto;
+        background-image: url(priyan2image.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .container1 #content1{
+        height: 500px;
+        margin: auto;
+        max-width: 600px;
+        margin-top: 130px;
+    }
+    .container1 #content1 h2{
+        margin-top: 50px;
+        color: #fff;
+        max-width: 600px;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .container1 #content1 p{
+        color: #fff;
+        max-width: 600px;
+        font-size: 1rem;
+        margin-top: 20px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .container1 #content1 button{
+        max-width: 600px;
+        padding: 10px 30px;
+        background-color: rgb(241, 225, 136);
+        color: rgba(37, 3, 75, 0.964);
+        margin-top: 40px;
+        margin-left: 90px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .container1 #content1 button:hover{
+        background-color:rgb(128, 219, 189);
+        color: rgb(66, 6, 6);
+    }
+    @media(max-width:320px){
+        .navbar ul li{
+            display: none;
+        }
+        .content p{
+            display: none;
+        }
+        .container1 #box1{
+            display: none;
+        }
+        .container2 #box2{
+            display: none;
+        }
+        .container2 #content2{
+            display: flex;
+            display: inline;
+            /* padding-left: 2px; */
+            width: 300px;
+        }
+        .container2 #content2 button{
+           display: none;
+        }
+    }
+
+        .container2{
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            display: flex; 
+            background-image: url(goldcolimg.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .container2 .box1{
+            width: 500px;
+            height: 500px;
+        }
+        .container2 #box2{
+            max-width: 600px;
+            height: 500px;
+            width: 500px;
+            border-radius: 25px;
+            margin: auto;
+            background: linear-gradient(rgb(0,0,0,0.8),rgb(0,0,0,0.8));
+            background-image: url(eyemakeupimage.webp);
+            background-position: center;
+            background-size: cover;
+        }
+        .container2 #content2{
+            height: 500px;
+            margin: auto;
+            max-width: 600px;
+            margin-top: 130px;
+        }
+        .container2 #content2 h2{
+            margin-top: 50px;
+            color: black;
+            max-width: 600px;
+            font-size: 2rem;
+            text-align: center;
+            padding: auto;
+        }
+        .container2 #content2 h1{
+            margin-top: 50px;
+            color: rgb(229, 10, 10);
+            max-width: 600px;
+            font-size: 2rem;
+            text-align: center;
+            padding: auto;
+        }
+        .container2 #content2 h3{
+            margin-top: 50px;
+            color: black;
+            max-width: 600px;
+            font-size: 1rem;
+            text-align: center;
+            padding: auto;
+        }
+        .container2 #content2 h4{
+            margin-top: 50px;
+            color:rgb(229, 10, 10);
+            max-width: 600px;
+            font-size: 1rem;
+            text-align: center;
+            padding: auto;
+        }
+        .container2 #content2 button{
+            max-width: 600px;
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 40px 150px;
+            border-radius: 25px;
+            border: 2px solid  rgb(97, 236, 16);
+            color:  rgb(9, 9, 9);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            font-size: 16px;
+        }
+        .container2 #content2 button:hover{
+            background-color: black;
+            color: rgb(97, 236, 16);
+            border: none;
+            font-size: small;
+        }
+
+.footer{
+    transition: 0.2s linear;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer .box-container{
+    padding: 20px 9%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    background-color: black;
+}
+.footer .box-container .box{
+    text-transform: capitalize;
+    flex: 1 1 250px;
+    color: #fff;
+}
+.footer .box-container .box h3{
+    color: #fff;
+    font-size: 25px;
+    padding: 10px 0;
+}
+.footer .box-container .box a{
+    display: block;
+    color: #fff;
+    font-size: 25px;
+    padding: 10px 0;
+}
+.footer .box-container .box a:hover{
+    text-decoration: none;
+    color: #e84393;
+}
+.footer .credit{
+    text-align: center;
+    padding-left: 30%;
+    margin-top: 15px;
+    padding-top: 25px;
+    font-size: 20px;
+    color: #fff;
+    border-top: 1px solid red;
+}
